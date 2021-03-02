@@ -1,0 +1,23 @@
+{
+  "name": "2021_03_02_DHL_S",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebfigaro/2021_03_02_DHL_S.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sebfigaro/2021_03_02_DHL_S/issues"
+  },
+  "homepage": "https://github.com/sebfigaro/2021_03_02_DHL_S#readme",
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
