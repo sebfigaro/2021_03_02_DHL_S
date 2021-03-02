@@ -9,7 +9,56 @@
 <body>
     <div id="main-content">
         <div id="formulaire-de-saisie">
-            formulaire de saisie
+            <form action="" method="GET">
+                <!-- Content : titre, auteur, adresse, mail , couleur, description -->
+                <table>
+                    <tr>
+                        <td><label for="form-titre">Titre de la note</label></td>
+                        <td><input type="text" name="form-titre" id="form-titre"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="form-auteur">Auteur</label></td>
+                        <td>
+                            <select name="form-auteur" id="form-auteur" >
+                                <option value="0">Louise</option>
+                                <option value="1">Cédric</option>
+                                <option value="2">Thomas</option>
+                                <option value="2">L'invité</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="form-date">Date et Heure</label></td>
+                        <td>Le<input type="date" name="form-date" id="form-date"><br/>
+                            à <input type="time" name="form-time" id="form-time"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="form-email">Email</label></td>
+                        <td><input type="email" name="form-email" id="form-email"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="form-adresse">Adresse</label></td>
+                        <td><input type="email" name="form-adresse" id="form-adresse"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <label for="form-description">Description</label>
+                        </td>
+                    <tr>
+                    </tr>
+                        <td colspan="2">
+                            <textarea type="text-aera" name="form-description" id="form-description" cols="30" rows="10"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="reset" value="Clear"></td>
+                        <td>
+                            <input type="submit" value="Save">
+                            <button type="submit">Save 2 <img src="img/save.png"/></button>
+                    </td>
+                    </tr>
+                </table>
+            </form>
         </div>
         <hr/>
         <div id="post-it-liste">
