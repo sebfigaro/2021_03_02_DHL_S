@@ -1,0 +1,96 @@
+body {
+    background-image: url("../img/backgroung_2.jpg");
+    background-size: 100% 180%;
+    height: 98vh;
+}
+
+#formulaire-de-saisie {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: rgba(153, 255, 0, 0.603);
+}
+
+#formulaire-de-saisie table {
+    width: 100%;
+}
+
+#formulaire-de-saisie td {
+    width: 50%;
+}
+
+#formulaire-de-saisie textarea {
+    width: 98%;
+    resize: None;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 700;
+    margin: 7px;
+    box-shadow: 7px 7px 10px grey;
+}
+
+.btn-success {
+    background-color: green;
+}
+
+.btn-error {
+    color: yellow;
+    background-color: red;
+}
+
+.btn-warning {
+    color: white;
+    background-color: orange;
+}
+
+#post-it-liste {
+    text-align: center;
+    height: calc(98vh - 450px);
+    overflow-y: scroll;
+}
+
+.post-it {
+    /* border: 1px solid black; */
+    background-color: #FFFFA5;
+    width: 250px;
+    padding: 7px;
+    margin-left: 17px;
+    margin-bottom: 17px;
+    height: 300px;
+    box-shadow: 15px 15px 20px grey;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.post-it:hover {
+    /* border: 1px solid black; */
+    box-shadow: 7px 7px 10px grey;
+    background-color: #FFFF50;
+}
+
+.center {
+    text-align: center;
+}
+
+.container-close-img {
+    float: right;
+}
+
+.container-close-img>img {
+    width: 32px;
+}
+
+.post-it-description {
+    margin-top: 20px;
+}

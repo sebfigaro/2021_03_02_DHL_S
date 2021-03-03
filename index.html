@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apps .js</title>
+    <link rel="stylesheet" href="styles/styles.css" />
 </head>
+
 <body>
-    <div id="jsLoaded" style="background-color: red; color: yellow;text-align: center;">/!\ Fichier Js non chargé /!\ </div>
+    <div id="jsLoaded" style="background-color: red; color: yellow;text-align: center;">/!\ Fichier Js non chargé /!\
+    </div>
     <div id="main-content">
         <div id="formulaire-de-saisie">
             <form action="" method="GET">
@@ -20,7 +24,7 @@
                     <tr>
                         <td><label for="form-auteur">Auteur</label></td>
                         <td>
-                            <select name="form-auteur" id="form-auteur" >
+                            <select name="form-auteur" id="form-auteur">
                                 <option value="0">Louise</option>
                                 <option value="1">Cédric</option>
                                 <option value="2">Thomas</option>
@@ -30,7 +34,7 @@
                     </tr>
                     <tr>
                         <td><label for="form-date">Date et Heure</label></td>
-                        <td>Le<input type="date" name="form-date" id="form-date"><br/>
+                        <td>Le<input type="date" name="form-date" id="form-date"><br />
                             à <input type="time" name="form-time" id="form-time"></td>
                     </tr>
                     <tr>
@@ -47,23 +51,33 @@
                         </td>
                     <tr>
                     </tr>
-                        <td colspan="2">
-                            <textarea type="text-aera" name="form-description" id="form-description" cols="30" rows="10"></textarea>
-                        </td>
+                    <td colspan="2">
+                        <textarea type="text-aera" name="form-description" id="form-description" cols="30"
+                            rows="10"></textarea>
+                    </td>
                     </tr>
                     <tr>
-                        <td><input type="reset" value="Clear"></td>
-                        <td>
-                            <input type="submit" value="Save">
-                            <button type="submit">Save 2 <img src="img/save_20x20.png"/></button>
-                    </td>
+                        <td><input type="reset" value="Clear" class="btn btn-warning"></td>
+                        <td class="align-right">
+                            <input type="submit" value="Save" class="btn btn-success">
+                            <button type="submit" class="btn btn-error">Save 2 <img src="img/save_20x20.png" /></button>
+                        </td>
                     </tr>
                 </table>
             </form>
         </div>
-        <hr/>
+        <hr />
         <div id="post-it-liste">
-            <div class="post-it">Premier post-it</div>
+            <div class="post-it">
+                <div class="container-close-img"><img src="./img/Close.png"></div>
+                <h2 class="post-it-titre">Titre Note</h2>
+                <div class="center post-it-date">03 Mars 2020 10h30</div>
+                <div class="center post-it-mail">gah@test.com</div>
+                <div class="center post-it-adresse">78 hdhdh, 78444 test</div>
+                <div class="post-it-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo
+                    blanditiis quisquam adipisci similique veritatis. Sapiente ab, rerum voluptas assumenda dolorum
+                    eveniet. At corrupti aut distinctio! Nesciunt, quas! Quaerat, a ut?</div>
+            </div>
             <div class="post-it">Deuxième post-it</div>
             <div class="post-it">Troisième post-it</div>
             <div class="post-it">Quatrième post-it</div>
@@ -72,4 +86,5 @@
     </div>
     <script src="js/index.js"></script>
 </body>
+
 </html>
