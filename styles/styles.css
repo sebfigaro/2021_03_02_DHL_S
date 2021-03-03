@@ -94,5 +94,26 @@ body {
 .post-it-description {
     margin-top: 20px;
     overflow-y: auto;
-    height: 150px;
+    height: 125px;
+}
+
+@media print{
+    #jsLoaded, #formulaire-de-saisie, hr {
+        display: none;
+    }
+
+    .post-it{
+        height: auto;
+        width: 6cm;
+    }
+
+    #post-it-liste{
+        height: auto;
+        overflow-y: unset
+    }
+
+    .post-it-description{
+        height: auto;
+        margin-top: 1cm;
+    }
 }
