@@ -93,4 +93,6 @@ body {
 
 .post-it-description {
     margin-top: 20px;
+    overflow-y: auto;
+    height: 150px;
 }
