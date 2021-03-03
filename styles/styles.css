@@ -37,7 +37,7 @@ body {
     border-radius: 6px;
     font-weight: 700;
     margin: 7px;
-    box-shadow: 7px 7px 10px grey;
+    box-shadow: 7px 7px 10px black;
 }
 
 .btn-success {
@@ -68,14 +68,14 @@ body {
     margin-left: 17px;
     margin-bottom: 17px;
     height: 300px;
-    box-shadow: 15px 15px 20px grey;
+    box-shadow: 15px 15px 20px black;
     display: inline-block;
     vertical-align: top;
 }
 
 .post-it:hover {
     /* border: 1px solid black; */
-    box-shadow: 7px 7px 10px grey;
+    box-shadow: 7px 7px 10px black;
     background-color: #FFFF50;
 }
 

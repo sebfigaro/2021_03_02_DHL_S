@@ -59,3 +59,26 @@ setTimeout(jsLoaded, 3210)
 setTimeout(remplirFormulaire, 5000)
 setTimeout(logFormulaire, 6000)
 setTimeout(getFormulaire, 7000)
+
+function makePostIt(postitValues) {
+    // Duplication du premier post it pour créer un nouveau
+    var postitNode=document.querySelector('.post-it').cloneNode(true);
+    postitNode.querySelector('.post-it-titre').innerText=postitValues.titre
+    postitNode.querySelector('.post-it-auteur').innerText=postitValues.auteur
+    postitNode.querySelector('.post-it-date').innerText='Le: ' + postitValues.date + ' à '+postitValues.heure
+    postitNode.querySelector('.post-it-mail').innerText=postitValues.email
+    postitNode.querySelector('.post-it-adresse').innerText=postitValues.adresse
+    postitNode.querySelector('.post-it-description').innerText=postitValues.description
+    return postitNode
+}
+
+function onformsubmit(evt) {
+    evt.preventDefault();
+    console.log(evt);
+    logFormulaire();
+    newpostit = makePostIt(getFormulaire());
+    document.querySelector("#post-it-liste").append(newpostit)
+    console.log("Ajout du nouveau post it terminé");
+}
+
+document.forms["mon-form"].addEventListener('submit', onformsubmit)
