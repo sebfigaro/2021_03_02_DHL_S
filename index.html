@@ -19,7 +19,7 @@
                 <table>
                     <tr>
                         <td><label for="form-titre">Titre de la note</label></td>
-                        <td><input type="text" name="form-titre" id="form-titre"></td>
+                        <td><input type="text" name="form-titre" id="form-titre" pattern="[A-Za-zÀ-Ýà-ý-]{1,}" placeholder="Titre"></td>
                     </tr>
                     <tr>
                         <td><label for="form-auteur">Auteur</label></td>
@@ -43,7 +43,7 @@
                     </tr>
                     <tr>
                         <td><label for="form-adresse">Adresse</label></td>
-                        <td><input type="text" name="form-adresse" id="form-adresse"></td>
+                        <td><input type="text" name="form-adresse" id="form-adresse" pattern="\d+ (rue|voie|chemin) \w+ \d{5}"></td>
                     </tr>
                     <tr>
                         <td colspan="2">
