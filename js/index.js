@@ -102,11 +102,34 @@ function onformsubmit(evt) {
     }
 }
 
+function getTemplateView(templateFileName, callback) {
+    // 1 - XMLHttpRequest instance
+    var xhr=new XMLHttpRequest(); 
+    // 2 - Preparation de la requête
+    xhr.open('GET', 'vues/' + templateFileName); // 
+    // 3 - Contenu a exécuter pour chaque changement d'état
+    xhr.onreadystatechange = function (evt) {
+        if (xhr.readyState !== XMLHttpRequest.DONE) return;
+        if (xhr.status !== 200){
+            console.log('Err XHR'+xhr.responseURL+'-->'+xhr.status+':'+xhr.statusText)
+            return;
+        } 
+        console.log(evt.target)           
+        callback(xhr.responseXML)
+    }
+    // 4 - 
+    xhr.send();
+}
+
 document.forms['mon-form'].addEventListener('submit', onformsubmit)
 
 /** --- Automatic test call --- */
-setTimeout(jsLoaded, 3210)
-setTimeout(remplirFormulaire, 5000)
-setTimeout(logFormulaire, 6000)
-setTimeout(getFormulaire, 7000)
+// setTimeout(jsLoaded, 3210)
+// setTimeout(remplirFormulaire, 5000)
+// setTimeout(logFormulaire, 6000)
+// setTimeout(getFormulaire, 7000)
 /** --------------------------- */
+
+getTemplateView('postit.xhtml',
+                function (response) {console.log(response)})
+
