@@ -1,0 +1,28 @@
+{
+    "postit":[
+        {
+            "id": 0,
+            "titre": "titre du post it",
+            "auteurID": 0,
+            "date": "2021-05-02",
+            "heure": "00:00:00",
+            "email": "a@bc.de",
+            "adresse": "Une adresse",
+            "description": "Une description"
+        },
+        {
+            "id": 1,
+            "titre": "titre du second post it",
+            "auteurID": 1,
+            "date": "2021-05-03",
+            "heure": "00:00:01",
+            "email": "f@bc.de",
+            "adresse": "Une autre adresse",
+            "description": "Une autre description"
+        }
+    ],
+    "auteurs":[
+        {"id": 0, "name": "Alex"},
+        {"id": 1, "name": "Louise"}
+    ]
+}
