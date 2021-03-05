@@ -1,5 +1,5 @@
 {
-  "postit": [
+  "postits": [
     {
       "id": 0,
       "titre": "titre du post it",
@@ -19,6 +19,26 @@
       "email": "f@bc.de",
       "adresse": "Une autre adresse",
       "description": "Une autre description"
+    },
+    {
+      "titre": "My birthday",
+      "auteurId": 0,
+      "date": "2021-08-03",
+      "heure": "20:00:00",
+      "adresse": "adresse 2",
+      "mail": "me@m.fr",
+      "description": "lorem 2",
+      "id": 4
+    },
+    {
+      "titre": "My birthday",
+      "auteurId": 0,
+      "date": "2021-08-03",
+      "heure": "20:00:00",
+      "adresse": "adresse 2",
+      "mail": "me@m.fr",
+      "description": "lorem 2",
+      "id": 5
     }
   ],
   "auteurs": [

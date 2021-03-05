@@ -134,7 +134,7 @@ function getTemplateView(templateFileName, callback) {
         var postitDoc = postitDocParser.parseFromString(xhr.responseText, 'application/xml')
         callback(postitDoc)*/
     }
-    // 4 - 
+    // 4 - Envois
     xhr.send();
 }
 
